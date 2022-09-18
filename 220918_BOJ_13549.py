@@ -15,7 +15,8 @@ def bfs(s):
                 # 순간이동일경우
                 if n == now:
                     visited[next] = visited[now]
-                    # 우선순위(가중치)를 높게하기 위해 appendleft
+                    # 비용이 0이기 때문에 가중치가 낮음.
+                    # 가중치가 낮은 간선의 우선순위를 높게하기 위해 appendleft
                     q.appendleft(next)
                 # 걷는 경우
                 else:
