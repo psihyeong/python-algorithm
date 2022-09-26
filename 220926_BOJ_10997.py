@@ -39,7 +39,7 @@ def star(n, y, x):
     star(n-1, y+2, x-2)
 
 N = int(input())
-# 가장 큰 테두리의 길이를 기준으로 리스트 생성
+# 가장 큰 테두리의 길이를 기준으로 리스트 만들기
 stars = [[' ' for _ in range(4*(N-1) + 1)] for _ in range(4*N - 1)]
 star(N,0,4*(N-1))
 for row in stars:
