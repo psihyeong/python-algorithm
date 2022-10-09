@@ -1,4 +1,6 @@
 # BOJ 14501번 퇴사
+# 브루트포스
+
 def dfs(startwith,val):
     global result
     if result < val:
