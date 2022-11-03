@@ -6,8 +6,9 @@ for _ in range(int(input())):
     # 해당 좌표의 스티커 점수 최댓값
     dp = [list(map(int,input().split())) for _ in range(2)]
     # 초기값
-    dp[0][1] += dp[1][0]
-    dp[1][1] += dp[0][0]
+    if N > 1:
+        dp[0][1] += dp[1][0]
+        dp[1][1] += dp[0][0]
 
     for i in range(2,N):
         # 가능한 경우의 수 중
