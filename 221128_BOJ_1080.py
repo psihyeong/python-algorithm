@@ -35,4 +35,4 @@ for i in range(N-2):
 if check():
   print(count)
 else:
-  print("-1")
+  print(-1)
