@@ -11,10 +11,9 @@ l, r = 1, max(arr)
 while l <= r:
     # mid 길이로
     mid = (l + r) // 2
+    # 만들 수 있는 랜선의 개수가
     line_cnt = 0
-
     for num in arr:
-        # 만들 수 있는 랜선의 개수가
         line_cnt += num//mid
 
     # K개 보다 크거나 같으면
