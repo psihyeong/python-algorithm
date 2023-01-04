@@ -1,12 +1,14 @@
 # BOJ 17219번 비밀번호 찾기
 
-N, M = map(int,input().split())
+import sys
+
+N, M = map(int,sys.stdin.readline().split())
 
 hash = {}
 for _ in range(N):
-    address, password = input().split()
+    address, password = sys.stdin.readline().split()
     hash[address] = password
 
 for _ in range(M):
-    tmp = input()
+    tmp = sys.stdin.readline().strip()
     print(hash[tmp])
