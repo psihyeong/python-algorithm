@@ -11,7 +11,7 @@ def solution(queue1, queue2):
     
     
     
-    while True:      # queue의 길이의 2배가 최대 경우의 수
+    while True:      
         if q1_sum == q2_sum:
             break
         elif q1_sum > q2_sum:
@@ -27,7 +27,7 @@ def solution(queue1, queue2):
             q1_sum += tmp
             answer += 1
         
-        if answer >= len(queue1)*4:
+        if answer >= len(queue1)*4:     # queue의 길이의 4배가 최대 경우의 수
             answer = -1
             break
     
